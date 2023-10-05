@@ -13,7 +13,7 @@ When("user enters data in {string} fields", async (field) => {
     await retirementCalculatorPage.enterDataInAllFields();
 });
 
-When("user data into all the required fields except in {string} field", async (fieldNumber) => {
+When("user enters data into all the required fields except in {string} field", async (fieldNumber) => {
   await retirementCalculatorPage.skipDataInREquiredField(fieldNumber);
 });
 

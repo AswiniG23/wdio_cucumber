@@ -14,7 +14,7 @@ Feature: Retirement savings Calculator
       | all           |
 
   Scenario Outline: Validate error message displays when user submits the Form without entering data in all the required fields
-    When user data into all the required fields except in "<reqfieldNumber>" field
+    When user enters data into all the required fields except in "<reqfieldNumber>" field
     And user clicks on Calculate button
     Then user should see an error message "Please fill out all required fields"
     And user should see incomplete field "<reqfieldNumber>" is highlighted with red color
