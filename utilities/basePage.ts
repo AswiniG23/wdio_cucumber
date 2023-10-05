@@ -13,7 +13,6 @@ async setText(element: WebdriverIO.Element, text: any){
     await this.waitForElementClickable(element, 5000, "Element not clickable");
     await this.clickElement(element);
     await element.setValue(text);
-   // await browser.pause(800);
 }
 
 //To click an element
